@@ -1,0 +1,23 @@
+﻿<Window x:Class="PasswordManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Password Manager" Height="350" Width="525">
+    <Grid>
+        <ListView Name="passwordListView" HorizontalAlignment="Left" Height="200" Margin="10,10,10,0" VerticalAlignment="Top" Width="480">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Сайт/Приложение" DisplayMemberBinding="{Binding Site}" Width="150"/>
+                    <GridViewColumn Header="Логин" DisplayMemberBinding="{Binding Login}" Width="150"/>
+                    <GridViewColumn Header="Пароль" DisplayMemberBinding="{Binding Password}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <TextBox Name="siteTextBox" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="loginTextBox" HorizontalAlignment="Left" Margin="170,220,0,0" VerticalAlignment="Top" Width="150"/>
+        <PasswordBox Name="passwordTextBox" HorizontalAlignment="Left" Margin="330,220,0,0" VerticalAlignment="Top" Width="150"/>
+
+        <Button Content="Добавить" Name="addButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="30" Margin="10,260,0,0" Click="AddButton_Click"/>
+        <Button Content="Сгенерировать пароль" Name="generateButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Margin="100,260,0,0" Click="GenerateButton_Click"/>
+    </Grid>
+</Window>
