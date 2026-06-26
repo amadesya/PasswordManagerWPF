@@ -12,12 +12,24 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <StackPanel Orientation="Horizontal" Margin="10,190,10,0" VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical" Margin="0,0,10,0">
+                <TextBlock Text="Сайт/Приложение:" Margin="0,0,0,5"/>
+                <TextBox Name="siteTextBox" Width="150"/>
+            </StackPanel>
 
-        <TextBox Name="siteTextBox" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="150"/>
-        <TextBox Name="loginTextBox" HorizontalAlignment="Left" Margin="170,220,0,0" VerticalAlignment="Top" Width="150"/>
-        <PasswordBox Name="passwordTextBox" HorizontalAlignment="Left" Margin="330,220,0,0" VerticalAlignment="Top" Width="150"/>
+            <StackPanel Orientation="Vertical" Margin="0,0,10,0">
+                <TextBlock Text="Логин:" Margin="0,0,0,5"/>
+                <TextBox Name="loginTextBox" Width="150"/>
+            </StackPanel>
 
-        <Button Content="Добавить" Name="addButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="30" Margin="10,260,0,0" Click="AddButton_Click"/>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Пароль:" Margin="0,0,0,5"/>
+                <PasswordBox Name="passwordTextBox" Width="150"/>
+            </StackPanel>
+        </StackPanel>
+
+            <Button Content="Добавить" Name="addButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="30" Margin="10,260,0,0" Click="AddButton_Click"/>
         <Button Content="Сгенерировать пароль" Name="generateButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Margin="100,260,0,0" Click="GenerateButton_Click"/>
     </Grid>
 </Window>
