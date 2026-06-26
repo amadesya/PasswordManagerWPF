@@ -31,7 +31,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone [https://github.com//PasswordManager.git](https://github.com/amadesya/PasswordManagerWPF)
+git clone https://github.com/amadesya/PasswordManagerWPF
 
 ```
 
@@ -39,3 +39,7 @@ git clone [https://github.com//PasswordManager.git](https://github.com/amadesya/
 2. Откройте файл решения (`.sln`) в Visual Studio.
 3. Выберите конфигурацию `Release` или `Debug`.
 4. Соберите проект и запустите приложение (клавиша F5).
+
+## Интерфейс приложения
+<img width="488" height="292" alt="image" src="https://github.com/user-attachments/assets/61f2918a-7737-4006-9961-89e2972cba60" />
+
